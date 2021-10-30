@@ -76,7 +76,67 @@ class Utilities {
           text: 'false'
         },
         {
-          opcode: 'exponent',
+          opcode: 'xor',
+
+          blockType: Scratch.BlockType.REPORTER,
+
+          text: '[A] ^ [B]',
+          arguments: {
+            A: {
+              type: Scratch.ArgumentType.NUMBER
+            },
+            B: {
+              type: Scratch.ArgumentType.NUMBER
+            }
+          }
+        },
+        {
+          opcode: 'or',
+
+          blockType: Scratch.BlockType.REPORTER,
+
+          text: '[A] ^ [B]',
+          arguments: {
+            A: {
+              type: Scratch.ArgumentType.NUMBER
+            },
+            B: {
+              type: Scratch.ArgumentType.NUMBER
+            }
+          }
+        },
+        {
+          opcode: 'and',
+
+          blockType: Scratch.BlockType.REPORTER,
+
+          text: '[A] ^ [B]',
+          arguments: {
+            A: {
+              type: Scratch.ArgumentType.NUMBER
+            },
+            B: {
+              type: Scratch.ArgumentType.NUMBER
+            }
+          }
+        },
+          {
+          opcode: 'lshift',
+
+          blockType: Scratch.BlockType.REPORTER,
+
+          text: '[A] ^ [B]',
+          arguments: {
+            A: {
+              type: Scratch.ArgumentType.NUMBER
+            },
+            B: {
+              type: Scratch.ArgumentType.NUMBER
+            }
+          }
+        },
+        {
+          opcode: 'rshift',
 
           blockType: Scratch.BlockType.REPORTER,
 
@@ -229,10 +289,30 @@ class Utilities {
     return false;
   }
 
-  exponent({A, B}) {
-    return Math.pow(A, B);
+  xor({A, B}) {
+    return A^B;
+  }
+  
+  or({A, B}) {
+    return A^B;
+  }
+  
+  and({A, B}) {
+    return A^B;
   }
 
+  not({A}) {
+    return ~A;
+  }
+  
+  lshift({A, B}) {
+    return A<<B;
+  }
+  
+ rshift({A, B}) {
+    return A>>B;
+  }
+  
   pi() {
     return Math.PI;
   }
