@@ -6,8 +6,8 @@ class Utilities {
 
   getInfo() {
     return {
-      id: 'utilities',
-      name: 'Utlities',
+      id: 'utilities2',
+      name: 'Utlities2',
 
       color1: '#8BC34A',
       color2: '#7CB342',
