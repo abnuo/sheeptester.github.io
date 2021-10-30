@@ -95,7 +95,7 @@ class Utilities {
 
           blockType: Scratch.BlockType.REPORTER,
 
-          text: '[A] ^ [B]',
+          text: '[A] | [B]',
           arguments: {
             A: {
               type: Scratch.ArgumentType.NUMBER
@@ -110,7 +110,7 @@ class Utilities {
 
           blockType: Scratch.BlockType.REPORTER,
 
-          text: '[A] ^ [B]',
+          text: '[A] & [B]',
           arguments: {
             A: {
               type: Scratch.ArgumentType.NUMBER
@@ -125,7 +125,7 @@ class Utilities {
 
           blockType: Scratch.BlockType.REPORTER,
 
-          text: '[A] ^ [B]',
+          text: '[A] << [B]',
           arguments: {
             A: {
               type: Scratch.ArgumentType.NUMBER
@@ -140,7 +140,7 @@ class Utilities {
 
           blockType: Scratch.BlockType.REPORTER,
 
-          text: '[A] ^ [B]',
+          text: '[A] >> [B]',
           arguments: {
             A: {
               type: Scratch.ArgumentType.NUMBER
